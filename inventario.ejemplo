@@ -1,0 +1,16 @@
+[ServidoresDocker]
+172.16.128.16 ansible_connection="ssh" ansible_hostname="docker" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+172.16.128.22 ansible_connection="ssh" ansible_hostname="docker" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+
+[ServidoresWeb]
+172.16.128.18 ansible_connection="ssh" ansible_hostname="web2" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+172.16.128.20 ansible_connection="ssh" ansible_hostname="web1" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+172.16.128.23 ansible_connection="ssh" ansible_hostname="web1" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+
+
+[ServidoresMySQL]
+172.16.128.17 ansible_connection="ssh" ansible_hostname="mysql-test" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+172.16.128.21 ansible_connection="ssh" ansible_hostname="mysql-prod" ansible_ssh_user="root" ansible_ssh_pass="root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
